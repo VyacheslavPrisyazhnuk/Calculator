@@ -11,10 +11,11 @@ public class Main {
         int p = 0;
         int m = 0;
         System.out.println("Input");
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String [] arr = in.readLine().split(" ");
         try {
-            while (scanner.hasNext()) {
-                list.add(scanner.next());
+           for (String arr1 : arr ) {
+                list.add(arr1);
                 i++;
             }
             for (Map.Entry<String, Integer> item : Rim.map.entrySet()) {
